@@ -34,7 +34,7 @@ const Projects = () => {
       category: "Personal Project",
       description: "Simulasi aplikasi toko belanja online dengan fitur keranjang belanja, manajemen state yang kompleks, dan integrasi API produk dummy.",
       tech: ["React.js", "Redux/Context", "API Integration"],
-      image: "/projects/grocery.jpg",
+      image: "/projects/grocery.png",
       link: "https://github.com/AndikaDzaki/repo-grocery-kamu",
       color: "from-blue-400/30 to-cyan-400/30"
     },
@@ -71,7 +71,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Link 
                 href={project.link} 
-                key={project.id} 
+                key={index} 
                 target="_blank"
                 className={`group relative flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 md:gap-12 items-center`}
             >
