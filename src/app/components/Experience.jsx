@@ -18,69 +18,71 @@ const Experience = () => {
     },
     {
       id: 3,
-      role: "Penata Kelola Teknologi Informasi", // Saya sesuaikan dengan gambar
+      role: "Penata Kelola Teknologi Informasi",
       company: "PPI Curug (MagangHub)",
-      period: "November 2025 - Selesai",
+      period: "24 November 2025 - 23 Mei 2026",
       description: "Membantu pemeliharaan website internal dan belajar bekerja dalam lingkungan pengembangan perangkat lunak yang dinamis.",
-      tech: ["Frontend Web Developer", "System Administration"]
+      tech: ["Frontend Web Developer", "System Administration"] 
     },
   ];
 
   return (
-    <section id="experience" className="py-20 bg-gray-900 text-white">
+    <section id="experience" className="py-20 bg-slate-50 text-slate-900">
       <div className="max-w-4xl mx-auto px-4">
         
-        {/* Judul Section */}
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
-          Work <span className="text-blue-500">Experience</span>
+        {/* Judul Section (Dengan Gradasi) */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-900">
+          Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Experience</span>
         </h2>
 
-        {/* CONTAINER UTAMA (Relative untuk patokan posisi garis) */}
+        {/* CONTAINER UTAMA */}
         <div className="relative space-y-12">
           
-          {/* --- GARIS VERTIKAL (THE LINE) --- */}
-          {/* Mobile: Di kiri (left-4) | Desktop: Di tengah (left-1/2) */}
-          <div className="absolute top-0 bottom-0 left-4 md:left-1/2 w-1 bg-gray-800 -translate-x-1/2"></div>
+          {/* --- GARIS VERTIKAL --- */}
+          <div className="absolute top-0 bottom-0 left-4 md:left-1/2 w-0.5 bg-slate-200 -translate-x-1/2"></div>
 
           {experiences.map((exp) => (
             <div key={exp.id} className="relative">
               
-              {/* --- TITIK DOT (THE DOT) --- */}
-              {/* Posisinya mengikuti garis: left-4 di mobile, left-1/2 di desktop */}
-              <div className="absolute top-0 left-4 md:left-1/2 w-6 h-6 bg-blue-600 rounded-full border-4 border-gray-900 shadow-lg shadow-blue-500/50 -translate-x-1/2 z-10"></div>
+              {/* --- TITIK DOT (Sekarang pakai Gradasi) --- */}
+              <div className="absolute top-0 left-4 md:left-1/2 w-5 h-5 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full border-4 border-white shadow-md -translate-x-1/2 z-10"></div>
 
-              {/* --- LAYOUT KONTEN (KIRI - KANAN) --- */}
+              {/* --- LAYOUT KONTEN --- */}
               <div className={`md:flex items-start justify-between ${exp.id % 2 === 0 ? 'flex-row-reverse' : ''}`}>
                 
-                {/* 1. Sisi Waktu (Hanya Tampil di Desktop) */}
+                {/* 1. Sisi Waktu (Desktop) */}
                 <div className={`hidden md:block w-[45%] ${exp.id % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                  <span className="text-blue-400 font-mono text-sm tracking-wider border border-blue-900 bg-blue-900/20 px-3 py-1 rounded-full">
+                  {/* Teks waktu juga diberi gradasi agar senada */}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold text-sm tracking-wider bg-white px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                     {exp.period}
                   </span>
                 </div>
 
                 {/* 2. Sisi Card (Konten Utama) */}
-                {/* Di Mobile kita kasih margin-left (ml-12) supaya tidak ketabrak garis */}
-                <div className="ml-12 md:ml-0 md:w-[45%] bg-black border border-gray-800 p-6 rounded-xl hover:border-blue-500 transition-all duration-300 hover:shadow-xl hover:shadow-blue-900/20 relative">
+                <div className="ml-12 md:ml-0 md:w-[45%] bg-white border border-slate-100 p-6 rounded-2xl hover:border-teal-300 transition-all duration-300 shadow-sm hover:shadow-xl relative">
                   
-                  {/* Waktu (Hanya muncul di Mobile) */}
-                  <span className="md:hidden inline-block mb-3 text-blue-400 font-mono text-xs border border-blue-900 bg-blue-900/20 px-2 py-1 rounded-full">
+                  {/* Waktu (Mobile) */}
+                  <span className="md:hidden inline-block mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold text-xs bg-slate-50 px-3 py-1 rounded-full border border-slate-200">
                     {exp.period}
                   </span>
 
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-xl font-bold text-slate-900 mb-1">
                     {exp.role}
                   </h3>
-                  <h4 className="text-gray-400 font-medium mb-4">{exp.company}</h4>
                   
-                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                  {/* Nama Perusahaan (Dengan Gradasi) */}
+                  <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-semibold text-sm mb-4">
+                    {exp.company}
+                  </h4>
+                  
+                  <p className="text-slate-600 text-sm leading-relaxed mb-4">
                     {exp.description}
                   </p>
 
                   {/* Tags Tech Stack */}
                   <div className="flex flex-wrap gap-2">
                     {exp.tech.map((item, idx) => (
-                      <span key={idx} className="text-xs text-gray-400 bg-gray-800 px-2 py-1 rounded border border-gray-700">
+                      <span key={idx} className="text-xs font-medium text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-200 hover:bg-teal-50 hover:text-teal-600 transition-colors cursor-default">
                         {item}
                       </span>
                     ))}
