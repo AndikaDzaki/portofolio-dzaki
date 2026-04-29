@@ -10,35 +10,32 @@ const About = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-slate-900">
             About <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Me</span>
           </h2>
-          {/* Garis bawah diubah menjadi gradasi agar senada */}
+          {/* Underline */}
           <div className="w-20 h-1.5 bg-gradient-to-r from-blue-500 to-teal-400 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           
-          {/* Kolom Kiri: Storytelling */}
+          {/* Left Column: Storytelling */}
           <div className="space-y-6 text-slate-600 text-lg leading-relaxed">
             <p>
-              Bagi saya, web development bukan sekadar menulis baris kode, melainkan seni 
-              <span className="text-slate-900 font-bold"> menerjemahkan ide menjadi realitas digital</span>. 
-              Sebagai lulusan Teknik Informatika, saya memiliki fondasi logika yang kuat, namun hati saya 
-              memilih jatuh cinta pada keindahan antarmuka (Frontend).
+              For me, web development is not just about writing lines of code, but the art of 
+              <span className="text-slate-900 font-bold"> translating ideas into digital reality</span>. 
+              As an Informatics Engineering graduate, I have a strong logical foundation, but my heart fell in love with the beauty of user interfaces (Frontend).
             </p>
             
             <p>
-              Saya menikmati tantangan dalam menciptakan website yang tidak hanya berfungsi dengan baik, 
-              tapi juga <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold">cepat, responsif, dan nyaman digunakan</span>. 
-              Spesialisasi saya saat ini adalah ekosistem <span className="text-slate-900 font-bold">React & Next.js</span>, 
-              di mana saya terus mengeksplorasi cara terbaik untuk membangun aplikasi web modern.
+              I enjoy the challenge of creating websites that not only function seamlessly but are also <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold">fast, responsive, and user-friendly</span>. 
+              My current specialty lies within the <span className="text-slate-900 font-bold">React & Next.js</span> ecosystem, 
+              where I continuously explore the best practices to build modern web applications.
             </p>
 
             <p>
-              Di luar layar monitor, saya adalah pembelajar yang antusias. Saya percaya bahwa teknologi 
-              berkembang cepat, dan kemampuan beradaptasi adalah aset terbesar seorang developer.
+              Beyond the screen, I am an enthusiastic learner. I believe that technology evolves rapidly, and adaptability is a developer&apos;s greatest asset.
             </p>
           </div>
 
-          {/* Kolom Kanan: Info Cards */}
+          {/* Right Column: Info Cards */}
           <div className="grid grid-cols-1 gap-6">
             
             {/* Card 1: Education */}
@@ -46,9 +43,9 @@ const About = () => {
               <h3 className="text-xl font-bold text-slate-900 mb-2 flex items-center gap-2">
                 <span>🎓</span> Education
               </h3>
-              <p className="text-slate-500">S1 Teknik Informatika</p>
-              <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold">Universitas Esa Unggul</p>
-              <p className="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Lulus 2025</p>
+              <p className="text-slate-500">Bachelor of Informatics Engineering</p>
+              <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold">Esa Unggul University</p>
+              <p className="text-xs text-slate-400 mt-1 uppercase tracking-wider font-semibold">Graduated 2025</p>
             </div>
 
             {/* Card 2: Current Focus */}

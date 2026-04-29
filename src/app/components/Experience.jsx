@@ -2,27 +2,27 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      role: "Freelance Web Developer",
-      company: "Prawira Hirya",
-      period: "Project Based",
-      description: "Merancang dan membangun website modern untuk Prawira Hirya. Fokus pada pembuatan antarmuka yang responsif, pemilihan palet warna modern, dan optimasi pengalaman pengguna (UX).",
-      tech: ["React.js", "Tailwind CSS", "UI/UX Design"]
+      role: "Information System and Technology Governance",
+      company: "Politeknik Penerbangan Indonesia Curug (Maganghub)",
+      period: "Nov 2025 - Present",
+      description: "Designed and implemented an integrated Moodle-based e-learning system. Developed the front-end user interface for the PPID website using WordPress CMS, and analyzed system requirements to optimize IT operational workflows.",
+      tech: ["Moodle LMS", "WordPress CMS", "UI/UX Design", "System Analysis"] 
     },
     {
       id: 2,
-      role: "Frontend Developer",
-      company: "PT. Educa Sisfomedia Indonesia",
-      period: "Februari 2024 - Juni 2024",
-      description: "Bertanggung jawab mengembangkan fitur frontend, memastikan desain pixel-perfect sesuai mockup, dan melakukan debugging untuk meningkatkan performa aplikasi web.",
-      tech: ["JavaScript", "Frontend Development", "Team Collaboration"]
+      role: "Freelance Front-End Developer",
+      company: "Prawira Hirya",
+      period: "Sep 2025 - Feb 2026",
+      description: "Designed and developed a responsive and interactive user interface for the Police Academy Class of 2018 website. Integrated RESTful APIs to ensure seamless data communication and optimized data fetching performance.",
+      tech: ["React.js", "RESTful API", "Tailwind CSS", "State Management"]
     },
     {
       id: 3,
-      role: "Penata Kelola Teknologi Informasi",
-      company: "PPI Curug (MagangHub)",
-      period: "24 November 2025 - 23 Mei 2026",
-      description: "Membantu pemeliharaan website internal dan belajar bekerja dalam lingkungan pengembangan perangkat lunak yang dinamis.",
-      tech: ["Frontend Web Developer", "System Administration"] 
+      role: "Front-End Developer (Independent Study)",
+      company: "PT. Educa Sisfomedia Indonesia",
+      period: "Feb 2024 - Jun 2024",
+      description: "Applied programming logic to improve code efficiency. Deepened JavaScript knowledge to build dynamic user interfaces and successfully developed a GroceryShop website implementing modern front-end technologies.",
+      tech: ["JavaScript (ES6+)", "Vue.js / React.js", "Bootstrap / Sass", "Team Collaboration"]
     },
   ];
 
@@ -30,38 +30,37 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-slate-50 text-slate-900">
       <div className="max-w-4xl mx-auto px-4">
         
-        {/* Judul Section (Dengan Gradasi) */}
+        {/* Title Section */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-slate-900">
           Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400">Experience</span>
         </h2>
 
-        {/* CONTAINER UTAMA */}
+        {/* MAIN CONTAINER */}
         <div className="relative space-y-12">
           
-          {/* --- GARIS VERTIKAL --- */}
+          {/* --- VERTICAL LINE --- */}
           <div className="absolute top-0 bottom-0 left-4 md:left-1/2 w-0.5 bg-slate-200 -translate-x-1/2"></div>
 
           {experiences.map((exp) => (
             <div key={exp.id} className="relative">
               
-              {/* --- TITIK DOT (Sekarang pakai Gradasi) --- */}
+              {/* --- DOT INDICATOR --- */}
               <div className="absolute top-0 left-4 md:left-1/2 w-5 h-5 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full border-4 border-white shadow-md -translate-x-1/2 z-10"></div>
 
-              {/* --- LAYOUT KONTEN --- */}
+              {/* --- CONTENT LAYOUT --- */}
               <div className={`md:flex items-start justify-between ${exp.id % 2 === 0 ? 'flex-row-reverse' : ''}`}>
                 
-                {/* 1. Sisi Waktu (Desktop) */}
+                {/* 1. Timeline Side (Desktop) */}
                 <div className={`hidden md:block w-[45%] ${exp.id % 2 === 0 ? 'text-left' : 'text-right'}`}>
-                  {/* Teks waktu juga diberi gradasi agar senada */}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold text-sm tracking-wider bg-white px-4 py-1.5 rounded-full border border-slate-200 shadow-sm">
                     {exp.period}
                   </span>
                 </div>
 
-                {/* 2. Sisi Card (Konten Utama) */}
+                {/* 2. Card Side (Main Content) */}
                 <div className="ml-12 md:ml-0 md:w-[45%] bg-white border border-slate-100 p-6 rounded-2xl hover:border-teal-300 transition-all duration-300 shadow-sm hover:shadow-xl relative">
                   
-                  {/* Waktu (Mobile) */}
+                  {/* Timeline (Mobile) */}
                   <span className="md:hidden inline-block mb-3 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-bold text-xs bg-slate-50 px-3 py-1 rounded-full border border-slate-200">
                     {exp.period}
                   </span>
@@ -70,7 +69,7 @@ const Experience = () => {
                     {exp.role}
                   </h3>
                   
-                  {/* Nama Perusahaan (Dengan Gradasi) */}
+                  {/* Company Name */}
                   <h4 className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 font-semibold text-sm mb-4">
                     {exp.company}
                   </h4>
@@ -79,7 +78,7 @@ const Experience = () => {
                     {exp.description}
                   </p>
 
-                  {/* Tags Tech Stack */}
+                  {/* Tech Stack Tags */}
                   <div className="flex flex-wrap gap-2">
                     {exp.tech.map((item, idx) => (
                       <span key={idx} className="text-xs font-medium text-slate-500 bg-slate-50 px-3 py-1 rounded-full border border-slate-200 hover:bg-teal-50 hover:text-teal-600 transition-colors cursor-default">

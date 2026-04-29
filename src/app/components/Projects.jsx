@@ -7,21 +7,21 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Sistem Absensi PWA (Skripsi)",
+      title: "Sistem Presensi SDN Uwung Jaya",
       fullname: "Rancang Bangun Absensi SDN Uwung Jaya dengan Penerapan Progressive Web Apps (PWA)",
       category: "Thesis Project",
-      description: "Aplikasi absensi digital berbasis website yang dirancang menggunakan teknologi PWA. Memungkinkan akses offline, install ke homescreen, dan performa cepat layaknya aplikasi native.",
+      description: "Pengembangan sistem informasi absensi sekolah berbasis arsitektur Full-Stack (React.js & Express.js). Sistem ini mengimplementasikan teknologi Progressive Web Apps (PWA) agar aplikasi dapat diakses dengan cepat menyerupai native app, serta dilengkapi dengan fitur integrasi notifikasi WhatsApp untuk pelaporan status kehadiran secara real-time.",
       tech: ["React.js", "PWA", "Express.js", "MySQL"],
       image: "/projects/sipres.png",
       link: "https://sistempresuj.netlify.app/", 
-      color: "from-blue-400/30 to-teal-400/30" // Warna glow disesuaikan untuk light mode
+      color: "from-blue-400/30 to-teal-400/30" 
     },
     {
       id: 2,
       title: "Prawira Hirya Website",
       fullname: "Modern Company Profile Web",
       category: "Freelance Project",
-      description: "Website profesional untuk CV Prawira Hirya. Fokus pada desain UI/UX yang modern, responsif, dan representatif untuk meningkatkan branding perusahaan kepada klien.",
+      description: "Pembuatan website company profile yang modern dan responsif untuk Prawira Hirya (Akademi Kepolisian Angkatan 2018). Dibangun dengan React.js dan Tailwind CSS, proyek ini berfokus pada perancangan antarmuka (UI/UX) yang elegan, interaktif, dan performa tinggi untuk merepresentasikan identitas serta dokumentasi kegiatan secara profesional.",
       tech: ["React.js", "Tailwind CSS", "UI/UX Design"],
       image: "/projects/prawira1.png",
       link: "https://www.prawirahirya.id/", 
@@ -32,22 +32,44 @@ const Projects = () => {
       title: "Grocery Shop App",
       fullname: "E-Commerce Simulation",
       category: "Personal Project",
-      description: "Simulasi aplikasi toko belanja online dengan fitur keranjang belanja, manajemen state yang kompleks, dan integrasi API produk dummy.",
+      description: "Aplikasi simulasi e-commerce interaktif untuk toko kebutuhan sehari-hari. Proyek mandiri ini berfokus pada implementasi state management yang kompleks menggunakan Redux/Context API, serta simulasi integrasi REST API untuk mengelola katalog produk, logika keranjang belanja (cart system), dan simulasi checkout pengguna.",
       tech: ["React.js", "Redux/Context", "API Integration"],
       image: "/projects/grocery.png",
       link: "https://github.com/AndikaDzaki/repo-grocery-kamu",
       color: "from-blue-400/30 to-cyan-400/30"
     },
-    {
-      id: 3,
+   {
+      id: 4,
       title: "Aviation Training & Learning Application System (ATLAS)",
-      fullname: "Training Simulation",
+      fullname: "Sistem Pembelajaran dan Pelatihan Penerbangan",
       category: "Internship Project",
-      description: ".",
-      tech: ["React.js", "Redux/Context", "API Integration"],
+      description: "Perancangan dan implementasi sistem e-learning terintegrasi berbasis Moodle untuk mendukung kegiatan pembelajaran dan pelatihan di lingkungan instansi.",
+      tech: ["Moodle", "LMS", "System Administration"],
       image: "/projects/atlas.png",
-      link: "https://github.com/AndikaDzaki/repo-grocery-kamu",
+      link: "https://github.com/AndikaDzaki/repo-grocery-kamu", 
       color: "from-blue-400/30 to-cyan-400/30"
+    },
+    {
+      id: 5,
+      title: "Website PPID PPI Curug",
+      fullname: "Pejabat Pengelola Informasi dan Dokumentasi",
+      category: "Internship Project",
+      description: "Pengembangan dan kustomisasi antarmuka (Front-End) website layanan informasi publik menggunakan CMS WordPress untuk mendukung transparansi data di lingkungan instansi.",
+      tech: ["WordPress", "CMS", "Theme Customization"],
+      image: "/projects/ppid.png",
+      link: "https://ppid.overthinkingku.com/",
+      color: "from-blue-400/30 to-cyan-400/30" 
+    },
+    {
+      id: 6,
+      title: "Lapor TI",
+      fullname: "Sistem Layanan Helpdesk IT",
+      category: "Internship Project",
+      description: "Pengembangan dan kustomisasi antarmuka (UI) sistem helpdesk berbasis HESK. Proyek ini mencakup penyesuaian tata letak visual, implementasi custom field untuk pemetaan lokasi spesifik, serta konfigurasi alur pelaporan tiket (ticketing system) guna mempercepat penanganan kendala teknis di lingkungan instansi.",
+      tech: ["HESK", "PHP", "CSS", "MySQL"],
+      image: "/projects/lapor.png",
+      link: "https://laporti.overthinkingku.com/",
+      color: "from-blue-400/30 to-cyan-400/30" 
     }
   ];
 
