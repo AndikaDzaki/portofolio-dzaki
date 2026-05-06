@@ -35,7 +35,7 @@ const Projects = () => {
       description: "Aplikasi simulasi e-commerce interaktif untuk toko kebutuhan sehari-hari. Proyek mandiri ini berfokus pada implementasi state management yang kompleks menggunakan Redux/Context API, serta simulasi integrasi REST API untuk mengelola katalog produk, logika keranjang belanja (cart system), dan simulasi checkout pengguna.",
       tech: ["React.js", "Redux/Context", "API Integration"],
       image: "/projects/grocery.png",
-      link: "https://github.com/AndikaDzaki/repo-grocery-kamu",
+      link: "https://github.com/AndikaDzaki/grovery-shop",
       color: "from-blue-400/30 to-cyan-400/30"
     },
    {
@@ -46,7 +46,7 @@ const Projects = () => {
       description: "Perancangan dan implementasi sistem e-learning terintegrasi berbasis Moodle untuk mendukung kegiatan pembelajaran dan pelatihan di lingkungan instansi.",
       tech: ["Moodle", "LMS", "System Administration"],
       image: "/projects/atlas.png",
-      link: "https://github.com/AndikaDzaki/repo-grocery-kamu", 
+      link: "hhttps://pelatihan.overthinkingku.com/", 
       color: "from-blue-400/30 to-cyan-400/30"
     },
     {
