@@ -43,12 +43,12 @@ const Hero = () => {
 
         {/* BAGIAN KANAN: FOTO */}
         <div className="flex-1 flex justify-center md:justify-end">
-          <div className="relative w-64 h-64 md:w-80 md:h-80">
+          <div className="relative w-64 h-[400px] md:w-80 md:h-[500px]">
             <Image 
-              src="/pasphoto.png" 
+              src="/foto-berdiri-nobg.png" 
               alt="Andika Dzaki"
               fill
-              className="object-cover rounded-2xl"
+              className="object-contain drop-shadow-xl"
               priority
             />
           </div>

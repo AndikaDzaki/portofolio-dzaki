@@ -4,6 +4,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
 import Projects from "./components/Projects";
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
     // 2. Main wrapper (pembungkus utama)
     <main className="flex min-h-screen flex-col bg-black">
       
-      {/* 3. Panggil komponen Hero di sini */}
+      <Navbar />
+      
       <Hero />
       <About/>
       <Experience/>
